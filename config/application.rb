@@ -10,7 +10,8 @@ module FirstApp
   class Application < Rails::Application
 
     config.action_mailer.delivery_method   = :postmark
-    config.action_mailer.postmark_settings = { :api_key => ENV['POSTMARK_API_KEY'] }
+    config.action_mailer.smtp_settings = { :api_key => "23587221-af88-4583-8dc6-73d7c31da212" }
+    
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

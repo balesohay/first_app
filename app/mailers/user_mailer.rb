@@ -1,13 +1,13 @@
 class UserMailer < ActionMailer::Base
 
-  def tagged_message(user)
-  	@user = user
-
+  #def tagged_message(user)
+  #@user = user
+  def tagged_message
   	mail(
   		:subject 	=> 'Do you know what you are doing matt?',	
   		:to 		=> 'balesohay@gmail.com',
-  		:from		=> 'balesohay@gmail.com'
-  		#:tag 		=> 'my-tag'
+  		:from		=> 'matt@cobiased.com',
+  		:tag 		=> 'tag name'
   	)
   end
 
